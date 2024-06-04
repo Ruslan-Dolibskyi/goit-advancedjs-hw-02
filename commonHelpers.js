@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */function a(){return`#${Math.floor(Math.random()*16777215).toString(16).padStart(6,0)}`}let t=null;const r=document.querySelector("[data-start]"),e=document.querySelector("[data-stop]");r.addEventListener("click",()=>{t===null&&(r.disabled=!0,e.disabled=!1,t=setInterval(()=>{document.body.style.backgroundColor=a()},1e3))});e.addEventListener("click",()=>{clearInterval(t),t=null,r.disabled=!1,e.disabled=!0});e.disabled=!0;
+//# sourceMappingURL=commonHelpers.js.map
